@@ -12,7 +12,7 @@ namespace PreAdvertScreen
 		private static PreAdvertScreenView _view;
 		private static ClickItem[] _clickItemPrefabs;
 
-		public static float Speed = 250;
+		public static float Speed = 300;
 		public static TimeSpan Duration = TimeSpan.FromSeconds(10);
 		public static TimeSpan SpawnCooldown = TimeSpan.FromSeconds(0.25f);
 
@@ -35,6 +35,12 @@ namespace PreAdvertScreen
 		{
 			if (_view == null) throw new Exception("PreAdvertScreenRoot not initialized. Use PreAdvertScreenRoot.Initialize()");
 			_view.Setup(backgroundSprite, activeTimer, activeCounter, screenData, mode);
+		}
+
+		public static void Setup()
+		{
+			if (_view == null) throw new Exception("PreAdvertScreenRoot not initialized. Use PreAdvertScreenRoot.Initialize()");
+			_view.Setup();
 		}
 
 		public static void Run(Action onOpen = null, Action<ClickItem> onSpawnClickItem = null, Action onClose = null)
