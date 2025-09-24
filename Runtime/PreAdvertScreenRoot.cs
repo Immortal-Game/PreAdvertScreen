@@ -65,6 +65,7 @@ namespace PreAdvertScreen
 			{
 				int randomIndex = Random.Range(0, _clickItemPrefabs.Length);
 				var newItem = Object.Instantiate(_clickItemPrefabs[randomIndex], _view.CurrentCanvas.Container);
+				newItem.SetCanvasData(GetCanvasSize(_view.CurrentCanvas.Canvas, _view.CurrentCanvas.CanvasRect));
 				onSpawnClickItem?.Invoke(newItem);
 				newItem.name = $"ClickItem №{Spawned.Count}";
 				newItem.OnClick.AddListener(_view.IncrementCounter);
