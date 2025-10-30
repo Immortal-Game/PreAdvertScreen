@@ -35,6 +35,7 @@ namespace PreAdvertScreen
 			data.Background.sprite = backgroundSprite;
 			data.TimerTMP.gameObject.SetActive(activeTimer);
 			data.CounterTMP.gameObject.SetActive(activeCounter);
+			Hide();
 		}
 		
 		public void Setup()
@@ -50,6 +51,7 @@ namespace PreAdvertScreen
 			data.Background.sprite = Resources.Load<Sprite>("Sprites/adclicker_background");
 			data.TimerTMP.gameObject.SetActive(true);
 			data.CounterTMP.gameObject.SetActive(true);
+			Hide();
 		}
 
 		internal void Show()
