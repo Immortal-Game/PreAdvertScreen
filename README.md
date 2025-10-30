@@ -3,7 +3,7 @@
 ## How to add in project
 PackageManager > + > Add package from git URL..
 ```
-https://github.com/TheErikSar/PreAdScreenPackage.git
+https://github.com/Immortal-Game/PreAdvertScreen.git
 ```
 
 ## Examples
