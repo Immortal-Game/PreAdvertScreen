@@ -84,7 +84,7 @@ namespace PreAdvertScreen
 				);
 
 				Spawned.Add(newItem);
-				yield return new WaitForSeconds((float)SpawnCooldown.TotalSeconds);
+				yield return new WaitForSecondsRealtime((float)SpawnCooldown.TotalSeconds);
 				time += (float)SpawnCooldown.TotalSeconds;
 			}
 

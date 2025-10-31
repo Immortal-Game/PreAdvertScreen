@@ -73,7 +73,7 @@ namespace PreAdvertScreen
 
 		public void SetTimeLeft(TimeSpan time)
 		{
-			CurrentCanvas.TimerTMP.text = _screenData.TimerText.Replace(_screenData.Tag, $"{time.Seconds:D2}..");
+			CurrentCanvas.TimerTMP.text = _screenData.TimerText.Replace(_screenData.Tag, $"{time.Seconds}..");
 		}
 	}
 }
